@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -14,4 +15,54 @@ body {
     max-width: 600px;
     border: 1px solid rgb(8, 50, 72);
     text-align: center;
+    padding: 1rem;
   }
+
+  .card {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 1px solid rgb(8, 50, 72);
+    margin: 1rem;
+    padding: 1.2rem;
+
+  }
+
+  .card__bookmark {  
+    position: absolute;
+        top: -15px;
+        right: 20px;
+        height: 2rem;     
+        padding: 0px; 
+        -webkit-transform: rotate(0deg) skew(0deg); 
+        transform: rotate(0deg) skew(0deg); 
+        border-left: 1rem solid rgba(0, 140, 255, 0.223); 
+        border-right: 1rem solid rgba(0, 140, 255, 0.223); 
+        border-bottom: 1rem solid transparent; 
+  }
+
+  .card__button {
+  height: 2rem;
+  border: 2px solid rgb(8, 50, 72);
+  margin: 1rem;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    font-size: small;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    gap: 0.1rem;
+    padding: 0px;
+  }
+
+  .card__list__items {
+border: 1px solid rgb(8, 50, 72);
+margin: 1px;
+padding: 1px;
+background:rgba(0, 140, 255, 0.223)
+  }
+  
