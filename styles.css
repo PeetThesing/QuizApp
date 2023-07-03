@@ -49,6 +49,11 @@ body {
   margin: 1rem;
   }
 
+  .card__answer {
+  padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
   ul {
     list-style-type: none;
     display: flex;
