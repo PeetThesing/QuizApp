@@ -71,3 +71,10 @@ padding: 1px;
 background:rgba(0, 140, 255, 0.223)
   }
   
+  .footer {
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid rgb(8, 50, 72);
+    text-align: center;
+    padding: 1rem;
+  }
