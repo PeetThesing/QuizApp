@@ -78,3 +78,7 @@ background:rgba(0, 140, 255, 0.223)
     text-align: center;
     padding: 1rem;
   }
+
+  .footer__img {
+width: 20px;
+  }
