@@ -11,6 +11,10 @@ body {
   flex-direction: column;
 }
 
+main {
+  margin: 0 0 4rem 0;
+}
+
 .header {
   width: 100%;
   max-width: 800px;
