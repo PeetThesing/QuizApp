@@ -82,6 +82,7 @@ button {
 footer {
   width: 100%;
   max-width: 800px;
+  background: white;
   border: 1px solid rgb(8, 50, 72);
   display: flex;
   justify-content: center;
@@ -90,4 +91,7 @@ footer {
   text-align: center;
   padding: 0.8rem;
   font-size: small;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
 }
