@@ -9,12 +9,17 @@ body {
   color: rgb(8, 50, 72);
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 main {
   margin: 0 0 4rem 0;
 }
 
+h2 {
+  text-align: left;
+  padding: 0 0 0 1rem;
+}
 .header {
   width: 100%;
   max-width: 800px;
@@ -33,6 +38,10 @@ main {
   border: 1px solid rgb(8, 50, 72);
   margin: 1rem;
   padding: 1.2rem;
+}
+
+.card__profile {
+  border-radius: 10px;
 }
 
 .card__bookmark {
@@ -75,6 +84,14 @@ ul {
 button {
   border: none;
   background: white;
+}
+
+.button__profile {
+  border: 1px solid rgb(8, 50, 72);
+  border-radius: 10px;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .card__list__items {
