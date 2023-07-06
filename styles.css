@@ -89,7 +89,6 @@ button {
 .button__profile {
   border: 1px solid rgb(8, 50, 72);
   border-radius: 10px;
-  margin: 0 0 1rem 0;
   padding: 0.5rem;
   text-align: center;
 }
