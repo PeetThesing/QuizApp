@@ -11,6 +11,10 @@ body {
   flex-direction: column;
 }
 
+main {
+  margin: 0 0 4rem 0;
+}
+
 .header {
   width: 100%;
   max-width: 800px;
@@ -20,6 +24,7 @@ body {
 }
 
 .card {
+  max-width: 800px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -82,6 +87,7 @@ button {
 footer {
   width: 100%;
   max-width: 800px;
+  background: white;
   border: 1px solid rgb(8, 50, 72);
   display: flex;
   justify-content: center;
@@ -90,4 +96,7 @@ footer {
   text-align: center;
   padding: 0.8rem;
   font-size: small;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
 }
