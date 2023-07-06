@@ -1,75 +1,7 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: rgb(8, 50, 72);
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-main {
-  margin: 0 0 4rem 0;
-}
-
-h2 {
-  text-align: left;
-  padding: 0 0 0 1rem;
-}
-.header {
-  width: 100%;
-  max-width: 800px;
-  border: 1px solid rgb(8, 50, 72);
-  text-align: center;
-  padding: 1rem;
-}
-
-.card {
-  max-width: 800px;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  border: 1px solid rgb(8, 50, 72);
-  margin: 1rem;
-  padding: 1.2rem;
-}
-
-.card__profile {
-  border-radius: 10px;
-}
-
-.card__bookmark {
-  position: absolute;
-  top: -15px;
-  right: 20px;
-  height: 2rem;
-  padding: 0px;
-}
-
-.card__bookmark__filled {
-  position: absolute;
-  top: -15px;
-  right: 20px;
-  height: 2rem;
-  padding: 0px;
-}
-
-.card__button {
-  height: 2rem;
-  border: 2px solid rgb(8, 50, 72);
-  margin: 1rem;
-}
-
-.card__answer {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-}
+/* BEM - Block, Element, Modifier */
+@import "./global.css";
+@import "./stylecomponents/card.css";
+@import "./stylecomponents/card.css";
 
 ul {
   list-style-type: none;
@@ -88,7 +20,7 @@ button {
 
 .button__profile {
   border: 1px solid rgb(8, 50, 72);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 0.5rem;
   text-align: center;
 }
@@ -100,19 +32,7 @@ button {
   background: rgba(0, 140, 255, 0.223);
 }
 
-footer {
-  width: 100%;
-  max-width: 800px;
-  background: white;
-  border: 1px solid rgb(8, 50, 72);
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  text-align: center;
-  padding: 0.8rem;
-  font-size: small;
-  position: fixed;
-  bottom: 0;
-  z-index: 10;
+.card__profile {
+  border-radius: 5px;
+  padding: 5rem;
 }
