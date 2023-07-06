@@ -1,0 +1,16 @@
+ul {
+  list-style-type: none;
+  display: flex;
+  font-size: small;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  gap: 0.1rem;
+  padding: 0px;
+}
+
+.card__list--items {
+  border: 1px solid var(--primarycolor);
+  margin: 1px;
+  padding: 1px;
+  background: var(--lightcolor);
+}

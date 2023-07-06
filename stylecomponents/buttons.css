@@ -1,0 +1,20 @@
+button {
+  border: none;
+  background: white;
+}
+
+.card__button {
+  height: 2rem;
+  border: 2px solid var(--primarycolor);
+  margin: 1rem;
+}
+
+.button__profile {
+  border: 1px solid var(--primarycolor);
+  border-radius: 5px;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.button__profile--show {
+}
