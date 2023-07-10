@@ -3,19 +3,8 @@ button {
   background: white;
 }
 
-.card__button {
+.button-card {
   height: 2rem;
   border: 2px solid var(--primarycolor);
   margin: 1rem;
-}
-.stats {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.stats__counter {
-  border: 1px solid var(--primarycolor);
-  border-radius: 5px;
-  padding: 0.5rem;
 }
