@@ -8,7 +8,7 @@ ul {
   padding: 0px;
 }
 
-.card__list--items {
+.list__item {
   border: 1px solid var(--primarycolor);
   margin: 1px;
   padding: 1px;
