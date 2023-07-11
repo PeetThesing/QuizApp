@@ -1,5 +1,6 @@
 /* BEM - Block, Element, Modifier */
 @import "./global.css";
+@import "./stylecomponents/header.css";
 @import "./stylecomponents/card.css";
 @import "./stylecomponents/buttons.css";
 @import "./stylecomponents/lists.css";

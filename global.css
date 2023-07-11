@@ -27,14 +27,6 @@ h2 {
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-header {
-  width: 100%;
-  max-width: 800px;
-  border: 1px solid var(--primarycolor);
-  text-align: center;
-  padding: 1rem;
-}
-
 footer {
   width: 100%;
   max-width: 800px;

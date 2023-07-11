@@ -1,4 +1,4 @@
-ul {
+.card__list {
   list-style-type: none;
   display: flex;
   font-size: small;
