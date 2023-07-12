@@ -15,6 +15,8 @@
       <section class="card">
         <button class="card__bookmark">
           <svg
+            role="img"
+            aria-label="Bookmark this question"
             xmlns="http://www.w3.org/2000/svg"
             height="1.5rem"
             viewBox="0 0 384 512"
@@ -27,20 +29,20 @@
           </svg>
         </button>
         <span>What property flips the axes in flexbox?</span>
-        <button class="card__button" class="card__button_show">
-          Show answer
-        </button>
-        <!--<p class="card__answer">flex-direction</p>
-<button class="card__button" class="card__button_hide">Hide answer</button> -->
+        <button class="button-card">Show answer</button>
+        <p hidden class="card__answer">flex-direction</p>
+        <button hidden class="button-card">Hide answer</button>
         <ul class="card__list">
-          <li class="card__list__items" class="html">#html</li>
-          <li class="card__list__items" class="flexbox">#flexbox</li>
-          <li class="card__list__items" class="css">#css</li>
+          <li class="list__item html">#html</li>
+          <li class="list__item flexbox">#flexbox</li>
+          <li class="list__item css">#css</li>
         </ul>
       </section>
       <section class="card">
-        <button class="card__bookmark__filled">
+        <button class="card__bookmark--filled">
           <svg
+            role="img"
+            aria-label="Bookmarked question"
             xmlns="http://www.w3.org/2000/svg"
             height="1.5rem"
             viewBox="0 0 384 512"
@@ -53,20 +55,20 @@
           </svg>
         </button>
         <span>Will there be a next question?</span>
-        <button class="card__button" class="card__button_show">
-          Show answer
-        </button>
-        <!--<p class="card__answer">New answer</p>
-<button class="card__button" class="card__button_hide">Hide answer</button> -->
+        <button class="button-card">Show answer</button>
+        <p hidden class="card__answer">New answer</p>
+        <button hidden class="button-card">Hide answer</button>
         <ul class="card__list">
-          <li class="card__list__items" class="html">#html</li>
-          <li class="card__list__items" class="flexbox">#flexbox</li>
-          <li class="card__list__items" class="css">#css</li>
+          <li class="list__item html">#html</li>
+          <li class="list__item flexbox">#flexbox</li>
+          <li class="list__item css">#css</li>
         </ul>
       </section>
       <section class="card">
-        <button class="card__bookmark__filled">
+        <button class="card__bookmark--filled">
           <svg
+            role="img"
+            aria-label="Bookmarked question"
             xmlns="http://www.w3.org/2000/svg"
             height="1.5rem"
             viewBox="0 0 384 512"
@@ -79,24 +81,28 @@
           </svg>
         </button>
         <span>Will there be a third question?</span>
-        <button class="card__button" class="card__button_show">
+        <button class="button-card" class="card__button--show">
           Show answer
         </button>
-        <!--<p class="card__answer">Dritte Antwort</p>
-<button class="card__button" class="card__button_hide">Hide answer</button> -->
+        <p hidden class="card__answer">Dritte Antwort</p>
+        <button hidden class="button-card" class="card__button_hide">
+          Hide answer
+        </button>
         <ul class="card__list">
-          <li class="card__list__items" class="html">#html</li>
-          <li class="card__list__items" class="flexbox">#flexbox</li>
-          <li class="card__list__items" class="css">#css</li>
+          <li class="list__item html">#html</li>
+          <li class="list__item flexbox">#flexbox</li>
+          <li class="list__item css">#css</li>
         </ul>
       </section>
     </main>
 
     <footer class="footer">
-      <a href="index.html">
+      <a href="index.html" aria-label="Go Home">
         <?xml version="1.0" encoding="UTF-8"?>
         <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
         <svg
+          role="img"
+          aria-label="home icon"
           height="2rem"
           id="Layer_1"
           style="enable-background: new 0 0 16 16"
@@ -113,8 +119,10 @@
           />
         </svg>
       </a>
-      <a href="bookmarked.html">
+      <a href="bookmarked.html" aria-label="Go to bookmarked Questions">
         <svg
+          role="img"
+          aria-label="bookmarked icon"
           xmlns="http://www.w3.org/2000/svg"
           height="2em"
           viewBox="0 0 384 512"
@@ -126,8 +134,10 @@
           />
         </svg>
       </a>
-      <a href="account.html">
+      <a href="profile.html" aria-label="Go to Profile">
         <svg
+          role="img"
+          aria-label="profile icon"
           xmlns="http://www.w3.org/2000/svg"
           width="40"
           height="2rem"
