@@ -6,6 +6,7 @@
 :root {
   --primarycolor: rgb(8, 50, 72);
   --lightcolor: rgb(170, 221, 235);
+  --darkmode-lightcolor: rgb(220, 247, 255);
 }
 
 body {
@@ -42,4 +43,9 @@ footer {
   position: fixed;
   bottom: 0;
   z-index: 10;
+}
+.dark-mode {
+  background-color: var(--primarycolor);
+  color: var(--darkmode-lightcolor);
+  border: 1px solid var(--darkmode-lightcolor);
 }
