@@ -1,6 +1,6 @@
 const bodyElement = document.querySelector('[data-js="body"]');
 const cardElement = document.querySelector('[data-js="card"]');
-const addDarkMode = document.querySelector('[data-js="button-dark-mode]');
+const addDarkMode = document.querySelector('[data-js="button-dark-mode"]');
 
 addDarkMode.addEventListener("click", () => {
   bodyElement.classList.add("dark");
