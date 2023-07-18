@@ -18,6 +18,12 @@ body {
   text-align: center;
 }
 
+body.dark {
+  background-color: var(--primarycolor);
+  color: var(--darkmode-lightcolor);
+  border: 1px solid var(--darkmode-lightcolor);
+}
+
 main {
   margin: 0 0 4rem 0;
 }
@@ -43,9 +49,4 @@ footer {
   position: fixed;
   bottom: 0;
   z-index: 10;
-}
-.dark-mode {
-  background-color: var(--primarycolor);
-  color: var(--darkmode-lightcolor);
-  border: 1px solid var(--darkmode-lightcolor);
 }

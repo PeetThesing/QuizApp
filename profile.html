@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="./index.js" defer></script>
   </head>
-  <body>
+  <body data-js="body">
     <header class="header">
       <h1 class="header__headline">Quiz App</h1>
     </header>
 
     <main>
-      <section class="card card__profile">
+      <section class="card card__profile" data-js="card">
         <svg
           role="img"
           aria-label="Profil icon"
@@ -72,7 +73,7 @@
       </section>
       <section class="card card__profile">
         <span>Dark Mode</span>
-        <button>
+        <button class="button" data-js="button-dark-mode">
           <svg
             role="img"
             aria-label="Switch to Darkmode"
