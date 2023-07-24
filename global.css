@@ -9,6 +9,10 @@
   --darkmode-lightcolor: rgb(220, 247, 255);
 }
 
+:root.dark {
+  --primarycolor: rgb(220, 247, 255);
+}
+
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -17,12 +21,12 @@ body {
   flex-direction: column;
   text-align: center;
 }
-
+/* 
 body.dark {
   background-color: var(--primarycolor);
   color: var(--darkmode-lightcolor);
   border: 1px solid var(--darkmode-lightcolor);
-}
+} */
 
 main {
   margin: 0 0 4rem 0;
@@ -34,7 +38,7 @@ h2 {
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-footer {
+.light .footer {
   width: 100%;
   max-width: 800px;
   background: white;
@@ -51,6 +55,25 @@ footer {
   z-index: 10;
 }
 
-.svg {
-  fill: #083248"
+.dark .footer {
+  background: var(--primarycolor);
+  border: 1px solid var(--darkmode-lightcolor);
+}
+
+.light .svg {
+  fill: var(--primarycolor);
+  stroke: var(--primarycolor);
+}
+.dark .svg {
+  fill: rgb(220, 247, 255);
+  background: var(--primarycolor);
+  color: var(--darkmode-lightcolor);
+  border: 1px solid var(--darkmode-lightcolor);
+}
+
+.dark {
+  fill: rgb(220, 247, 255);
+  background: var(--primarycolor);
+  color: var(--darkmode-lightcolor);
+  border: 1px solid var(--darkmode-lightcolor);
 }

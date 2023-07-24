@@ -1,7 +1,11 @@
-header {
+.light header {
   width: 100%;
   max-width: 800px;
   border: 1px solid var(--primarycolor);
   text-align: center;
   padding: 1rem;
+}
+
+.dark header {
+  border: 1px solid var(--darkmode-lightcolor);
 }
