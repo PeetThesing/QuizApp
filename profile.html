@@ -79,16 +79,32 @@
         <span>Dark Mode</span>
         <button class="button" data-js="button-dark-mode">
           <svg
-            role="img"
-            aria-label="Switch to Darkmode"
+            data-js="darkmode-off"
+            role="image"
+            aria-label="Switch to darkmode"
             xmlns="http://www.w3.org/2000/svg"
-            height="1rem"
-            viewBox="0 0 576 512"
+            width="32"
+            height="1.5rem"
+            viewBox="0 0 256 256"
           >
-            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
             <path
               class="svg"
-              d="M192 64C86 64 0 150 0 256S86 448 192 448H384c106 0 192-86 192-192s-86-192-192-192H192zm192 96a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"
+              d="M176 56H80a72 72 0 0 0 0 144h96a72 72 0 0 0 0-144ZM80 168a40 40 0 1 1 40-40a40 40 0 0 1-40 40Z"
+            />
+          </svg>
+          <svg
+            data-js="darkmode-on"
+            class="invisible"
+            role="img"
+            aria-label="Switch to light-mode"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="1.5rem"
+            viewBox="0 0 256 256"
+          >
+            <path
+              class="svg"
+              d="M176 56H80a72 72 0 0 0 0 144h96a72 72 0 0 0 0-144Zm0 112a40 40 0 1 1 40-40a40 40 0 0 1-40 40Z"
             />
           </svg>
         </button>
