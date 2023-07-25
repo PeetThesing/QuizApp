@@ -30,3 +30,9 @@
   padding-top: 1rem;
   padding-bottom: 2rem;
 }
+
+.card.dark {
+  background-color: var(--primarycolor);
+  color: var(--darkmode-lightcolor);
+  border: 1px solid var(--darkmode-lightcolor);
+}

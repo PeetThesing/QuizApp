@@ -13,8 +13,12 @@
   gap: 10px;
 }
 
-.stats__counter {
+.light .stats__counter {
   border: 1px solid var(--primarycolor);
   border-radius: 5px;
   padding: 0.5rem;
+}
+
+.dark .stats__counter {
+  border: 1px solid var(--darkmode-lightcolor);
 }

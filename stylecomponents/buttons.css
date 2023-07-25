@@ -2,9 +2,19 @@ button {
   border: none;
   background: white;
 }
+.dark button {
+  background: var(--primarycolor);
+}
+/* .button:hover {
+  background-color: rgb(92, 159, 247);
+} */
 
 .button-card {
   height: 2rem;
   border: 2px solid var(--primarycolor);
   margin: 1rem;
+}
+
+.invisible {
+  display: none;
 }
