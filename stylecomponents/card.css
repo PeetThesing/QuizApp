@@ -11,6 +11,7 @@
 }
 
 .card__bookmark {
+  display: block;
   position: absolute;
   top: -15px;
   right: 20px;
@@ -19,6 +20,7 @@
 }
 
 .card__bookmark--filled {
+  display: block;
   position: absolute;
   top: -15px;
   right: 20px;

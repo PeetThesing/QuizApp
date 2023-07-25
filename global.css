@@ -63,6 +63,7 @@ h2 {
 .light .svg {
   fill: var(--primarycolor);
   stroke: var(--primarycolor);
+  background: white;
 }
 .dark .svg {
   fill: rgb(220, 247, 255);
