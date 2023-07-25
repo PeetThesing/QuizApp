@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="./index.js" defer></script>
+    <script src="./JS/form.js" defer></script>
   </head>
   <body data-js="body" class="light">
     <header class="header">
@@ -13,7 +13,33 @@
     </header>
 
     <main>
-      <section class="card" data-js="card"></section>
+      <section class="card" data-js="card">
+        <form data-js="form">
+          <fieldset>
+            <legend>Create new question</legend>
+            <label for="your-question">Your question:</label>
+            <textarea
+              type="textarea"
+              name="your-question"
+              rows="5"
+              id="your-question"
+              max="150"
+            ></textarea>
+            <label for="your-answer">Your answer:</label>
+            <textarea
+              type="textarea"
+              type="textarea"
+              name="your-question"
+              rows="5"
+              id="your-question"
+              max="150"
+            ></textarea>
+            <label for="tag">Tag:</label>
+            <input type="text" name="tag" id="tag" max="150" />
+            <button class="button--submit" type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
 
     <footer class="footer">
@@ -57,16 +83,18 @@
       </a>
       <a href="form.html" aria-label="Create new card">
         <svg
+          role="img"
+          aria-label="form icon"
           xmlns="http://www.w3.org/2000/svg"
           width="32"
-          height="32"
-          viewBox="0 0 32 32"
+          height="2.1rem"
+          viewBox="0 0 24 24"
         >
           <path
-            fill="currentColor"
-            d="M16 2A14.172 14.172 0 0 0 2 16a14.172 14.172 0 0 0 14 14a14.172 14.172 0 0 0 14-14A14.172 14.172 0 0 0 16 2Zm8 15h-7v7h-2v-7H8v-2h7V8h2v7h7Z"
+            class="svg"
+            d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5v2H5v14h14v-5h2z"
           />
-          <path fill="none" d="M24 17h-7v7h-2v-7H8v-2h7V8h2v7h7v2z" />
+          <path class="svg" d="M21 7h-4V3h-2v4h-4v2h4v4h2V9h4z" />
         </svg>
       </a>
 
