@@ -21,19 +21,13 @@ body {
   flex-direction: column;
   text-align: center;
 }
-/* 
-body.dark {
-  background-color: var(--primarycolor);
-  color: var(--darkmode-lightcolor);
-  border: 1px solid var(--darkmode-lightcolor);
-} */
 
 main {
   margin: 0 0 4rem 0;
 }
 
 h2 {
-  text-align: left;
+  text-align: center;
   font-size: 1rem;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
