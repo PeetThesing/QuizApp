@@ -1,16 +1,27 @@
+.profile-main {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .card__profile {
   border: 0;
   padding: 1rem;
   margin: 0;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .profile-text {
   font-size: small;
 }
+
 .stats {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 10px;
+  align-self: center;
 }
 
 .light .stats__counter {
