@@ -31,15 +31,3 @@ hideAnswer.addEventListener("click", () => {
   showAnswer.classList.toggle("invisible");
   hideAnswer.classList.toggle("invisible");
 });
-
-//Button for Darkmode
-// buttonAddDarkMode.addEventListener("click", () => {
-//   bodyElement.classList.toggle("dark");
-//   if (darkModeOn.classList.contains("invisible")) {
-//     darkModeOn.classList.remove("invisible");
-//     darkModeOff.classList.add("invisible");
-//   } else {
-//     darkModeOn.classList.add("invisible");
-//     darkModeOff.classList.remove("invisible");
-//   }
-// });
