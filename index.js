@@ -16,11 +16,19 @@ bookmarkButton.addEventListener("click", () => {
 });
 
 //Show answer
+// showAnswer.addEventListener("click", () => {
+//   answer.classList.toggle("invisible");
+//   showAnswer.classList.toggle("invisible");
+//   hideAnswer.classList.toggle("invisible");
+// });
+
 showAnswer.addEventListener("click", () => {
   answer.classList.toggle("invisible");
-  showAnswer.classList.toggle("invisible");
-  hideAnswer.classList.toggle("invisible");
+  showAnswer.textContent = answer.classList.contains("invisible")
+    ? "Show answer"
+    : "Hide answer";
 });
+
 //Hide answer
 hideAnswer.addEventListener("click", () => {
   answer.classList.toggle("invisible");
