@@ -7,9 +7,6 @@ newQuestionForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
-  newCard.classList.add("card", "card-new");
-  newCard.setAttribute("data-js", "card");
-
   const newCard = document.createElement("section");
   newCard.innerHTML = `
   <button class="card__bookmark" data-js="bookmark">
@@ -55,7 +52,7 @@ newQuestionForm.addEventListener("submit", (event) => {
     <li class="list__item html">${data.tag}</li>
   </ul>
   `;
-
-  console.log(newCard.innerHTML);
+  newCard.classList.add("card", "card-new");
+  newCard.setAttribute("data-js", "card");
   bodyForm.append(newCard);
 });
