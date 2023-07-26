@@ -7,11 +7,11 @@ newQuestionForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
-  console.log(data.question);
+  newCard.classList.add("card", "card-new");
+  newCard.setAttribute("data-js", "card");
+
   const newCard = document.createElement("section");
   newCard.innerHTML = `
-<script src="./index.js" defer></script>
-  <section class="card card-new" data-js="card">
   <button class="card__bookmark" data-js="bookmark">
     <svg
       data-js="bookmark-icon"
@@ -54,7 +54,6 @@ newQuestionForm.addEventListener("submit", (event) => {
   <ul class="card__list">
     <li class="list__item html">${data.tag}</li>
   </ul>
-</section>
   `;
 
   console.log(newCard.innerHTML);

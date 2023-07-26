@@ -16,11 +16,16 @@
       <form data-js="form">
         <h2>Create a new question</h2>
         <label for="question">Your question:</label>
-        <textarea name="question" rows="5" id="question" max="150"></textarea>
+        <textarea
+          name="question"
+          rows="5"
+          id="question"
+          maxlength="150"
+        ></textarea>
         <label for="answer">Your answer:</label>
-        <textarea name="answer" rows="5" id="answer" max="150"></textarea>
+        <textarea name="answer" rows="5" id="answer" maxlength="150"></textarea>
         <label for="tag">Tag:</label>
-        <input type="text" name="tag" id="tag" max="150" />
+        <input type="text" name="tag" id="tag" maxlength="20" />
         <button class="button--submit" type="submit">Submit</button>
       </form>
     </main>
