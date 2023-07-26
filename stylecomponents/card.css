@@ -10,7 +10,7 @@
   padding: 1.2rem;
 }
 
-.card__bookmark {
+.card .card__bookmark {
   display: block;
   position: absolute;
   top: -15px;
@@ -19,13 +19,17 @@
   padding: 0px;
 }
 
-.card__bookmark--filled {
+.card .card__bookmark--filled {
   display: block;
   position: absolute;
   top: -15px;
   right: 20px;
   height: 2rem;
   padding: 0px;
+}
+
+.invisible {
+  display: none;
 }
 
 .card__answer {
@@ -37,4 +41,8 @@
   background-color: var(--primarycolor);
   color: var(--darkmode-lightcolor);
   border: 1px solid var(--darkmode-lightcolor);
+}
+
+.card-new {
+  margin: -3rem 1rem 5rem 1rem;
 }
