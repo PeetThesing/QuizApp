@@ -17,13 +17,22 @@
         <h2>Create a new question</h2>
         <label for="question">Your question:</label>
         <textarea
+          data-js="question-input"
           name="question"
           rows="5"
           id="question"
           maxlength="150"
         ></textarea>
+        <p class="counter" data-js="question-count">0 von 150 Zeichen</p>
         <label for="answer">Your answer:</label>
-        <textarea name="answer" rows="5" id="answer" maxlength="150"></textarea>
+        <textarea
+          data-js="answer-input"
+          name="answer"
+          rows="5"
+          id="answer"
+          maxlength="150"
+        ></textarea>
+        <p class="counter" data-js="answer-count">0 von 150 Zeichen</p>
         <label for="tag">Tag:</label>
         <input type="text" name="tag" id="tag" maxlength="20" />
         <button class="button--submit" type="submit">Submit</button>

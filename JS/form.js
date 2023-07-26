@@ -1,6 +1,14 @@
-//Gettings Elements from HTML
+//Gettings Elements from HTML for creating new Question
 const newQuestionForm = document.querySelector('[data-js="form"]');
 const bodyForm = document.querySelector('[data-js="body-form"]');
+
+//Gettings Elements from HTML for counting Text
+const questionInput = document.querySelector('[data-js="question-input"]');
+const answerInput = document.querySelector('[data-js="answer-input"]');
+const countParagraphQuestion = document.querySelector(
+  '[data-js="question-count"]'
+);
+const countParagraphAnswer = document.querySelector('[data-js="answer-count"]');
 
 //Add Eventlistener to Submit-Button
 newQuestionForm.addEventListener("submit", (event) => {
@@ -55,4 +63,31 @@ newQuestionForm.addEventListener("submit", (event) => {
   newCard.classList.add("card", "card-new");
   newCard.setAttribute("data-js", "card");
   bodyForm.append(newCard);
+});
+
+//Funktion for Counting Question-Input
+function characterCountQuestion() {
+  const maxLength = 150;
+  const inputLength = questionInput.value.length;
+  // inputLength = answerInput.value.length;
+  const remainingLength = maxLength - inputLength;
+  countParagraphQuestion.textContent = `${remainingLength} von 150 Zeichen`;
+}
+
+//Funktion for Counting Answer-Input
+function characterCountAnswer() {
+  const maxLength = 150;
+  inputLength = answerInput.value.length;
+  const remainingLength = maxLength - inputLength;
+  countParagraphAnswer.textContent = `${remainingLength} von 150 Zeichen`;
+}
+
+// Input Event for Question
+question.addEventListener("input", (event) => {
+  characterCountQuestion();
+});
+
+// Input Event for Answer
+answer.addEventListener("input", (event) => {
+  characterCountAnswer();
 });

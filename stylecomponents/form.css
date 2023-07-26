@@ -5,3 +5,8 @@ form {
   padding: 1rem;
   max-width: 800px;
 }
+
+.counter {
+  font-size: x-small;
+  align-self: flex-end;
+}
