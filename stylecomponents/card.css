@@ -1,5 +1,6 @@
 .card {
-  max-width: 800px;
+  min-width: 200px;
+  max-width: 250px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -45,4 +46,5 @@
 
 .card-new {
   margin: -3rem 1rem 5rem 1rem;
+  align-self: center;
 }
