@@ -71,7 +71,7 @@ function characterCountQuestion() {
   const inputLength = questionInput.value.length;
   // inputLength = answerInput.value.length;
   const remainingLength = maxLength - inputLength;
-  countParagraphQuestion.textContent = `${remainingLength} von 150 Zeichen`;
+  countParagraphQuestion.textContent = `${remainingLength} of 150 characters`;
 }
 
 //Funktion for Counting Answer-Input
@@ -79,7 +79,7 @@ function characterCountAnswer() {
   const maxLength = 150;
   inputLength = answerInput.value.length;
   const remainingLength = maxLength - inputLength;
-  countParagraphAnswer.textContent = `${remainingLength} von 150 Zeichen`;
+  countParagraphAnswer.textContent = `${remainingLength} of 150 characters`;
 }
 
 // Input Event for Question
